@@ -74,7 +74,7 @@ export default class Meme extends React.Component {
                         <p className="uk-text-large uk-text-bold">Meme Generator</p>
                         <p className="uk-text-meta">
                             Idea from
-                             <a className="uk-text-link" href="(http://demo14.downloader.tech/)"> this page</a>
+                             <a className="uk-text-link" href="http://demo14.downloader.tech/"> this page</a>
                         </p>
                         <button className="uk-margin uk-button uk-button-secondary" onClick={this.loadMeme}>GET OTHER MEME</button>
                         <div className="uk-child-width-1-2@s uk-grid-small" uk-grid="">
