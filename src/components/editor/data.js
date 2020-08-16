@@ -42,7 +42,7 @@ export default class Data extends React.Component {
             backgroundColor: target.value,
         });
     }
-    saveText() {
+    saveText(editor = 0) {
         const data = {
             text: document.getElementById('text').value,
             size: this.state.size,
@@ -53,8 +53,6 @@ export default class Data extends React.Component {
         cookie.save("data", data, {
             path: "/"
         });
-        alert("TEXT SAVED!");
-
     }
     render() {
         return (
@@ -62,7 +60,7 @@ export default class Data extends React.Component {
                 <Text
                     key="text" backgroundColor={this.state.backgroundColor}
                     color={this.state.color} fontSize={this.state.size} textAlign={this.state.textAlign} />
-                <div ref={this.text} className="uk-first-column uk-height-large uk-width-1-4@m" style={{ marginTop: "100px" }}>
+                <div ref={this.text} className="uk-first-column uk-height-large uk-width-1-4@m" style={{ marginTop: "50px" }}>
                     <div className="uk-card uk-card-default uk-card-body">
                         <div className="uk-form-stacked">
                             <div className="uk-margin uk-width-expand">
@@ -100,8 +98,8 @@ export default class Data extends React.Component {
                             </div>
                             <div className="uk-margin">
                                 <div className="uk-form-controls">
-                                    <input className="uk-input uk-button uk-button-primary" key="save" type="button"
-                                        value={"Save"} onClick={() => this.saveText()} />
+                                    <input className="uk-input uk-button uk-button-primary" id="save" key="save" type="button"
+                                        value={"Save"} onClick={() => this.saveText(1)} />
                                 </div>
                             </div>
                         </div>

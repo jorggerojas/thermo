@@ -15,7 +15,8 @@ export default class Text extends React.Component {
             textAlign: this.props.textAlign,
             border: "1.5px solid black",
             borderRadius: "15px",
-            backgroundColor: this.props.backgroundColor
+            backgroundColor: this.props.backgroundColor,
+            outline: "none"
         }
         return (
             <div className="uk-first-column uk-height-large uk-width-expand@s">
