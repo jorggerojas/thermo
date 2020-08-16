@@ -1,5 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Run: 
+
+Download this repo and run with: 
 ### `npm start`
 
 This is only for test React and learn more about the components.
